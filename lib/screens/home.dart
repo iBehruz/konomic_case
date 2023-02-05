@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:konomic_case/widgets/select_picker.dart';
+import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -32,9 +34,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SelectPicker(text: "BTC", icon: Icons.snowboarding, onTap: (){},),
             Container(height: 60,
             child: InkWell(
-                onTap: (){},
+                onTap: (){
+                },
                 child: const ListTile(
                   title: Text("BTC", style: TextStyle(fontSize: 30),),
                   leading: Icon(Icons.snowboarding, size: 30,),
